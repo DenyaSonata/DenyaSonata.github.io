@@ -95,25 +95,41 @@
             padding: 0 4px;
         }
         .column {
-            flex: 50%;
+            flex: 25%;
             max-width: 25%;
             padding: 0 4px;
         }
         .column img {
             margin-top: 8px;
             vertical-align: middle;
+            transition: transform .2s;
             width: 100%;
+        }
+        .column img:hover {
+            -ms-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
         }
         @media screen and (max-width: 800px) {
             .column {
-                flex: 100%;
+                flex: 50%;
                 max-width: 50%;
+            }
+            .column img:hover {
+            -ms-transform: scale(1.15);
+            -webkit-transform: scale(1.15);
+            transform: scale(1.15);
             }
         }
         @media screen and (max-width: 600px) {
             .column {
                 flex: 100%;
                 max-width: 100%;
+            }
+            .column img:hover {
+            -ms-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
             }
         }
     </style>
@@ -136,14 +152,28 @@
     </div>
     <div class="row">
         <div class="column">
-            <img src="https://i.imgur.com/gCU3LAr.jpg" alt="Original Character">
-            <img src="https://i.imgur.com/yLycM6m.jpeg" alt="OC x Reiynn">
-            <img src="https://i.imgur.com/rFmukWo.jpeg" alt="Random Artwork">
+            <img src="https://i.imgur.com/gCU3LAr.jpg">
+            <img src="https://i.imgur.com/yLycM6m.jpeg">
+            <img src="https://i.imgur.com/YiNhgme.jpeg">
+            <img src="https://i.imgur.com/FlYOvQP.jpeg">
         </div>
         <div class="column">
-            <img src="https://i.imgur.com/7UDYy9O.jpeg" alt="OMANAS 2023 Art Concept">
-            <img src="https://i.imgur.com/rcPjM4a.jpeg" alt="OMANAS 2023 Art Concept">
-            <img src="https://i.imgur.com/YiNhgme.jpeg" alt="Peanutiess">
+            <img src="https://i.imgur.com/7UDYy9O.jpeg">
+            <img src="https://i.imgur.com/rcPjM4a.jpeg">
+            <img src="https://i.imgur.com/pj1QyaO.jpeg">
+            <img src="https://i.imgur.com/rFmukWo.jpeg">
+        </div>
+        <div class="column">
+            <img src="https://i.imgur.com/lNQRhfl.jpeg">
+            <img src="https://i.imgur.com/pGSbXbH.jpeg">
+            <img src="https://i.imgur.com/Dqbroa2.jpeg">
+            <img src="https://i.imgur.com/2adicTa.jpeg">
+        </div>
+        <div class="column">
+            <img src="https://i.imgur.com/8TxjtRW.jpeg">
+            <img src="https://i.imgur.com/kKJtcOe.jpeg">
+            <img src="https://i.imgur.com/eJaTSTD.jpeg">
+            <img src="https://i.imgur.com/gVIL9YU.jpeg">
         </div>
     </div>
     <div class="social-links" style="margin-top: 5%; margin-left: 12%; margin-right: 12%;">
