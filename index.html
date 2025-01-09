@@ -89,22 +89,26 @@
             background: #125688;
             color: white;
         }
-        div.scroll {
-            background-color: #2d2d2d;
-            overflow: auto;
-            white-space: nowrap;
-            padding: 15px;
-            margin-left: 12%;
-            margin-right: 12%;
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
         }
-        div.scroll img {
-            padding: 15px;
-            transition: .2s;
+        .column {
+            flex: 50%;
+            max-width: 50%;
+            padding: 0 4px;
         }
-        div.scroll img:hover {
-            -ms-transform: scale(1.05);
-            -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -120,17 +124,21 @@
             </div>
             <p style="font-size: 18;">Short Bio</p>
             <div class="bio">
-                <p style="text-align: justify; font-size: 20px;">Saya itu seorang yang hobi menggambar, walau kemampuan saya masih terus berkembang. Saya senang menciptakan karya seni, entah itu membuat sketsa atau bereksperimen dengan animasi 2D. Terkadang saat tidak sedang menggambar saya bermain yang menurut saya lumayan ahli dalam kategori gamenya, game FPS (First Person Shooter). Saya juga tertarik dengan coding dan game developing, saking tertariknya saya, saya selalu ingin mengembangkan kemampuan saya dalam coding dan game developing</p>
+                <p style="text-align: justify; font-size: 20px;">Saya memiliki hobi menggambar, walau kemampuan saya masih terus berkembang. Saya senang menciptakan karya seni, entah itu membuat sketsa atau bereksperimen dengan animasi 2D. Terkadang saat tidak sedang menggambar saya bermain yang menurut saya lumayan ahli dalam kategori gamenya, game FPS (First Person Shooter). Saya juga tertarik dengan coding dan game developing, saking tertariknya saya, saya selalu ingin mengembangkan kemampuan saya dalam coding dan game developing</p>
             </div>
         </div>
     </div>
-    <div class="scroll">
-        <img src="https://i.imgur.com/gCU3LAr.jpg" alt="Original Character" width="340" height="400">
-        <img src="https://i.imgur.com/yLycM6m.jpeg" alt="OC x Reiynn" width="600" height="400">
-        <img src="https://i.imgur.com/rFmukWo.jpeg" alt="Random Artwork" width="400" height="400">
-        <img src="https://i.imgur.com/7UDYy9O.jpeg" alt="OMANAS 2023 Art Concept" width="400" height="400">
-        <img src="https://i.imgur.com/rcPjM4a.jpeg" alt="OMANAS 2023 Art Concept" width="400" height="400">
-        <img src="https://i.imgur.com/YiNhgme.jpeg" alt="Peanutiess" width="400" height="400">
+    <div class="row">
+        <div class="column">
+            <img src="https://i.imgur.com/gCU3LAr.jpg" alt="Original Character">
+            <img src="https://i.imgur.com/yLycM6m.jpeg" alt="OC x Reiynn">
+            <img src="https://i.imgur.com/rFmukWo.jpeg" alt="Random Artwork">
+        </div>
+        <div class="column">
+            <img src="https://i.imgur.com/7UDYy9O.jpeg" alt="OMANAS 2023 Art Concept">
+            <img src="https://i.imgur.com/rcPjM4a.jpeg" alt="OMANAS 2023 Art Concept">
+            <img src="https://i.imgur.com/YiNhgme.jpeg" alt="Peanutiess">
+        </div>
     </div>
     <div class="social-links" style="margin-top: 5%; margin-left: 12%; margin-right: 12%;">
         <a href="https://www.facebook.com/profile.php?id=61552469131463">
