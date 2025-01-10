@@ -27,6 +27,12 @@
             padding: 20px;
             max-width: 1200;
             margin: 0 auto;
+            transition: transform .2s;
+        }
+        .container:hover {
+            -ms-transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
         }
         .main-content {
             flex: 2;
@@ -43,12 +49,6 @@
             height: 95px;
             border-radius: 50%;
             object-fit: cover;
-            transition: transform .2s;
-        }
-        .profile-pic:hover {
-            -ms-transform: scale(1.25);
-            -webkit-transform: scale(1.25);
-            transform: scale(1.25);
         }
         .profile-info h1 {
             margin: 0;
@@ -96,9 +96,36 @@
             background: #125688;
             color: white;
         }
+        .collapsible {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            text-align: center;
+            outline: none;
+            font-size: 18px;
+            transition: border-radius .2s ease-out;
+        }
+        .collapsible:hover {
+            background-color: #111;
+            color: #ffffff70;
+        }
+        .active {
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
         .row {
             display: flex;
+            max-height: 0;
+            overflow: hidden;
             flex-wrap: wrap;
+            transition: max-height .2s ease-out;
             justify-content: center;
             padding: 0 4px;
         }
@@ -144,7 +171,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="main-content" style="margin-left: .6%; margin-right: .6%;">
+        <div class="main-content">
             <div class="profile-header" style="justify-content: center;">
                 <img src="https://i.pinimg.com/736x/a5/0b/b8/a50bb883b73e6926c92b29943a331e79.jpg" class="profile-pic">
                 <div class="profile-info">
@@ -154,11 +181,11 @@
             </div>
         </div>
     </div>
-    <p style="font-size: 18; text-align: center; margin-top: 1%;">Short Bio</p>
-    <div class="bio" style="margin-top: .5%; margin-left: 3%; margin-right: 3%;">
+    <p style="font-size: 18px; text-align: center;">Short Bio</p>
+    <div class="bio" style="margin-top: .5%; margin-left: 6%; margin-right: 6%;">
         <p style="text-align: justify; font-size: 20px;">Saya memiliki hobi menggambar, walau kemampuan saya masih terus berkembang. Saya senang menciptakan karya seni, entah itu membuat sketsa atau bereksperimen dengan animasi 2D. Terkadang saat tidak sedang menggambar saya bermain yang menurut saya lumayan ahli dalam kategori gamenya, game FPS (First Person Shooter). Saya juga tertarik dengan coding dan game developing, saking tertariknya saya, saya selalu ingin mengembangkan kemampuan saya dalam coding dan game developing</p>
     </div>
-    <p style="font-size: 18; text-align: center; margin-top: 1%;">Artworks</p>
+    <button class="collapsible" style="text-align: center;">Artworks</button>
     <div class="row">
         <div class="column">
             <a href="https://www.instagram.com/dhenyash/p/CzsZLibSKID/">
