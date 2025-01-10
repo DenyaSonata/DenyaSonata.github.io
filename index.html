@@ -73,7 +73,7 @@
             margin: 0;
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 10px;
         }
         .fa {
             transition: transform .2s;
@@ -127,9 +127,7 @@
         .active {
             border-bottom-left-radius: 0px;
             border-bottom-right-radius: 0px;
-            .collapsible:hover {
-                transform: scale(1);
-            }
+            transition: transform none;
         }
         .row {
             display: flex;
