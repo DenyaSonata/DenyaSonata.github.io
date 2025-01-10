@@ -27,20 +27,6 @@
             background-size: auto;
             background-position: center;
         }
-        body::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: inherit;
-            background-repeat: inherit;
-            background-size: inherit;
-            background-position: inherit;
-            filter: blur(10px); /* Set the blur level */
-            z-index: -1; /* Make sure it stays behind content */
-        }
         .container {
             display: flex;
             flex-direction: column;
