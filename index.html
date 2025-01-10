@@ -117,14 +117,19 @@
             outline: none;
             font-size: 18px;
             transition: border-radius .2s ease-out;
+            transition: transform .2s;
         }
         .collapsible:hover {
             background-color: #222;
             color: #ffffff70;
+            transform: scale(1.1);
         }
         .active {
             border-bottom-left-radius: 0px;
             border-bottom-right-radius: 0px;
+            .collapsible:hover {
+                transform: scale(1);
+            }
         }
         .row {
             display: flex;
