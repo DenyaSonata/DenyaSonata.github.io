@@ -88,6 +88,10 @@ body {
     background: #125688;
     color: white;
 }
+.fa-navicon {
+    background: #012c4a33;
+    color: white;
+}
 .collapsible {
     display: block;
     background-color: #333;
