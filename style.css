@@ -1,3 +1,41 @@
+header a {
+    float: left;
+    font-size: large;
+    padding: 30px 20px;
+    text-align: center;
+    background: none;
+    border: none;
+    width: auto;
+    height: auto;
+    color: #ffffff90;
+    font-weight: normal;
+}
+.phead {
+    float: left;
+    font-size: xx-large;
+    padding: 18px 24px;
+    text-align: center;
+    background: none;
+    border: none;
+    width: auto;
+    height: auto;
+    color: white;
+    font-weight: bold;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    margin: 0;
+    background: inherit;
+    color: white;
+    float: right;
+}
 body {
     margin-left: .3%;
     margin-right: .3%;
@@ -91,6 +129,8 @@ body {
 .fa-navicon {
     background: #012c4a33;
     color: white;
+    height: auto;
+    width: auto;
 }
 .collapsible {
     display: block;
@@ -187,4 +227,5 @@ body {
     .social-links {
         gap: 5px;
     }
+    
 }
