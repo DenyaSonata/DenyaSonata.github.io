@@ -44,9 +44,9 @@ header a {
     transition: transform .2s;
 }
 header a:hover, .phead:hover, .dropbtn:hover {
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -ms-transform: scale(1.12);
+    -webkit-transform: scale(1.12);
+    transform: scale(1.12);
 }
 body {
     margin-left: .3%;
