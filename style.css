@@ -57,8 +57,9 @@ body {
     background-color: #101010;
     color: #ffffff;
     font-family: Arial, sans-serif;
-    background-image: url('https://wallpapercave.com/wp/wp1812839.jpg');
-    background-size: auto;
+    background-image: url('https://i.imgur.com/Oqhs7rr.jpeg');
+    background-size: 100%;
+    background-repeat: repeat;
     background-position: center;
 }
 .container {
