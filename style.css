@@ -1,17 +1,21 @@
 header a {
-    float: left;
+    float: right;
+    cursor: pointer;
     font-size: large;
     padding: 30px 20px;
     text-align: center;
+    text-decoration: none;
     background: none;
     border: none;
     width: auto;
     height: auto;
     color: #ffffff90;
     font-weight: normal;
+    transition: transform .2s;
 }
 .phead {
     float: left;
+    cursor: pointer;
     font-size: xx-large;
     padding: 18px 24px;
     text-align: center;
@@ -21,12 +25,14 @@ header a {
     height: auto;
     color: white;
     font-weight: bold;
+    transition: transform .2s;
 }
 .dropdown {
     float: left;
     overflow: hidden;
 }
 .dropdown .dropbtn {
+    cursor: pointer;
     font-size: 16px;
     border: none;
     outline: none;
@@ -35,6 +41,12 @@ header a {
     background: inherit;
     color: white;
     float: right;
+    transition: transform .2s;
+}
+header a:hover, .phead:hover, .dropbtn:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 body {
     margin-left: .3%;
@@ -75,14 +87,18 @@ body {
 }
 .profile-info h1 {
     margin: 0;
+    cursor: default;
     font-size: 24px;
 }
 .profile-info a {
     margin: 5px 0;
+    text-decoration: none;
+    cursor: default;
     color: #cccccc;
 }
 .bio {
     background-color: #2d2d2d;
+    cursor: default;
     padding: 20px;
     margin: 20px 0;
     border: 1px solid #ffffff;
@@ -109,28 +125,22 @@ body {
     font-size: 20px;
     border-radius: 8px;
     margin: 5px 5px;
-    width: 200px;
+    width: 25px;
+    height: 25px;
     padding: 20px;
     border: #ffffff00;
 }
-.fa:hover {
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
 .fa-facebook {
-    background: #3B5998;
+    background: #00000000;
     color: white;
 }
 .fa-instagram {
-    background: #125688;
+    background: #00000000;
     color: white;
 }
 .fa-navicon {
     background: #012c4a33;
     color: white;
-    height: auto;
-    width: auto;
 }
 .collapsible {
     display: block;
@@ -227,5 +237,4 @@ body {
     .social-links {
         gap: 5px;
     }
-    
 }
