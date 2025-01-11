@@ -1,3 +1,8 @@
+@media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+}
 .phead {
     float: left;
     cursor: pointer;
@@ -108,6 +113,9 @@ body {
     position: relative;
     padding: 20px;
     margin: 0 auto;
+}
+.back-to-top {
+    pointer-events: all;
 }
 .main-content {
     flex: 2;
