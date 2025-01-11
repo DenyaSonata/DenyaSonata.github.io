@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 @media (prefers-reduced-motion: no-preference) {
     html {
       scroll-behavior: smooth;
@@ -17,6 +19,20 @@
     color: white;
     font-weight: bold;
     transition: transform .2s;
+}
+.thead {
+    color: #ffffff90;
+    text-decoration: none;
+    padding: 30px 20px;
+    float: left;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.thead:hover {
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    color: white;
 }
 .dropdown {
     background: #00000040;
@@ -93,6 +109,15 @@
     -webkit-transform: scale(1.12);
     transform: scale(1.12);
 }
+.header-sticky {
+    position: fixed;
+    width: 98%;
+    background-color: #00000090;
+    border-radius: 8px;
+    z-index: 1;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+    animation: slideInDown 0.3s;
+}  
 body {
     margin-left: .3%;
     margin-right: .3%;
