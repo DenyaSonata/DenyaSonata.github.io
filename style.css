@@ -3,6 +3,21 @@
       scroll-behavior: smooth;
     }
 }
+
+body {
+    margin-left: .3%;
+    margin-right: .3%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #101010;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.imgur.com/Oqhs7rr.jpeg');
+    background-size: 100%;
+    background-repeat: repeat;
+    background-position: center;
+}
 .phead {
     float: left;
     cursor: pointer;
@@ -19,6 +34,7 @@
     transition: transform .2s;
 }
 .thead {
+    display: inline-block;
     color: #ffffff90;
     text-decoration: none;
     padding: 30px 20px;
@@ -39,7 +55,6 @@
     padding: auto;
     border-radius: 8px;
     margin: 0 auto;
-    float: left;
 }
 .social {
     color: #ffffff90;
@@ -102,7 +117,7 @@
     transform: scale(1.15);
     border-radius: 8px;
 }
-.header a:hover, .phead:hover {
+.header a:hover {
     -ms-transform: scale(1.12);
     -webkit-transform: scale(1.12);
     transform: scale(1.12);
@@ -126,29 +141,12 @@
       transform: translateY(0);
     }
 }
-body {
-    margin-left: .3%;
-    margin-right: .3%;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-    background-color: #101010;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    background-image: url('https://i.imgur.com/Oqhs7rr.jpeg');
-    background-size: 100%;
-    background-repeat: repeat;
-    background-position: center;
-}
 .container {
     display: flex;
     flex-direction: column;
     position: relative;
     padding: 20px;
     margin: 0 auto;
-}
-.back-to-top {
-    pointer-events: all;
 }
 .main-content {
     flex: 2;
@@ -178,27 +176,6 @@ body {
     cursor: default;
     color: #cccccc;
 }
-.bio {
-    background-color: #2d2d2db0;
-    cursor: default;
-    padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #ffffff;
-    border-radius: 8px;
-    transition: transform .2s;
-}
-.bio:hover {
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
-.social-links {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    transition: gap .2s;
-}
 .fa {
     transition: transform .2s;
     display: inline-block;
@@ -221,104 +198,102 @@ body {
     color: white;
 }
 .fa-navicon {
-    background: #012c4aa7;
+    background: #012c4a70;
     color: white;
-}
-.collapsible {
-    display: block;
-    background-color: #333333b0;
-    color: #ffffff70;
-    cursor: pointer;
-    margin: 0 auto;
-    padding: 18px;
-    width: 85%;
-    border: none;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    text-align: center;
-    outline: none;
-    font-size: 18px;
-    transition: border-radius 1s ease-out;
-    transition: transform .2s;
-}
-.collapsible:hover {
-    background-color: #333333;
-    color: white;
-    transform: scale(1.1);
-}
-.active {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    transition: transform none;
 }
 .row {
     display: flex;
+}
+.col {
+    float: left;
+    background: #00000060;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    vertical-align: middle;
+    text-align: justify;
+    justify-content: center;
+    padding: 2%;
+    width: 50%;
+    transition: transform .2s;
+    cursor: default;
+    transform: scale(.98);
+}
+.col p:hover {
+    transform: 1.2;
+}
+.col:hover {
+    transform: scale(1.01);
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.skill-bar {
+    width: 90%;
+    background-color: #ffffff60;
+    border-radius: 32px;
+}
+.skill {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 32px;
+    color: white;
+}
+.draw {
+    width: 75%;
+    background-color: blueviolet;
+}
+.lua {
+    width: 80%;
+    background-color: steelblue;
+}
+.html {
+    width: 80%;
+    background-color: cadetblue;
+}
+.design {
+    width: 60%;
+    background-color: cornflowerblue;
+}
+.rowimg {
+    display: flex;
     max-height: 0;
-    overflow: hidden;
     flex-wrap: wrap;
     transition: max-height .2s ease-out;
     justify-content: center;
     padding: 0 4px;
 }
-.column {
+.colimg {
     flex: 20%;
     max-width: 20%;
     padding: 0 4px;
 }
-.column img {
+.colimg img {
     margin-top: 8px;
     vertical-align: middle;
     transition: transform .2s;
     width: 100%;
 }
-.column img:hover {
+.colimg img:hover {
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+
 @media screen and (max-width: 1000px) {
-    .column {
+    .colimg {
         flex: 30%;
         max-width: 30%;
     }
-    .column img:hover {
+    .colimg img:hover {
         -ms-transform: scale(1.865);
         -webkit-transform: scale(1.865);
         transform: scale(1.865);
     }
-    .social-links {
-        gap: 60px;
-    }
 }
 @media screen and (max-width: 800px) {
-    .column {
-        flex: 40%;
-        max-width: 40%;
-    }
-    .column img:hover {
-    -ms-transform: scale(1.075);
-    -webkit-transform: scale(1.075);
-    transform: scale(1.075);
-    }
-    .social-links {
-        gap: 40px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 85%;
-        max-width: 85%;
-    }
-    .column img:hover {
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-    }
-    .social-links {
-        gap: 5px;
-    }
     .dropdown-content {
         min-width: none;
         width: 100%;
@@ -334,5 +309,31 @@ body {
         -webkit-transform: scale(1.05);
         transform: scale(1.05);
         background-color: #252525;
+    }
+    .row {
+        display: block;
+    }
+    .col {
+        width: 100%;
+    }
+    .colimg {
+        flex: 40%;
+        max-width: 40%;
+    }
+    .colimg img:hover {
+    -ms-transform: scale(1.075);
+    -webkit-transform: scale(1.075);
+    transform: scale(1.075);
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 85%;
+        max-width: 85%;
+    }
+    .column img:hover {
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
     }
 }
